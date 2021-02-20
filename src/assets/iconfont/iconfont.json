@@ -1,0 +1,23 @@
+{
+  "id": "2369636",
+  "name": "ofly-vue",
+  "font_family": "iconfont",
+  "css_prefix_text": "el-icon-ofly-",
+  "description": "ofly-vue-demo 测试用",
+  "glyphs": [
+    {
+      "icon_id": "6808025",
+      "name": "Mouse",
+      "font_class": "mouse",
+      "unicode": "ed18",
+      "unicode_decimal": 60696
+    },
+    {
+      "icon_id": "14134975",
+      "name": "Exit without change",
+      "font_class": "exit",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}

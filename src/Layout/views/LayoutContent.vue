@@ -1,11 +1,11 @@
 <template>
-    <div class="content">
+    <div class="content-main">
         <router-view></router-view>
     </div>
 </template>
 
 <style scoped>
-.content {
-    padding: 16px;
+.content-main {
+    margin: 10px;
 }
 </style>

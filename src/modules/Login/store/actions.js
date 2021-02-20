@@ -10,7 +10,6 @@ export default {
             const response = await services.loginService(payload)
             if (response.code === 1) {
                 const menuResponse = await services.getMenusService()
-                debugger
                 if (menuResponse.code === 1) {
                     AuthUtil.setSessionUser({
                         user: response.data,

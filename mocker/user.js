@@ -23,24 +23,24 @@ const getMenus = function(req, res) {
         records: [
             {
                 id: "1",
-                icon: "xxx",
+                icon: "el-icon-ofly-exit iconfont",
                 name: "版本管理",
                 children: [
                     {
                         id: "1-1",
-                        icon: "xxx",
+                        icon: "el-icon-platform-eleme",
                         name: "原生管理",
                         path: "/home"
                     },
                     {
                         id: "1-2",
-                        icon: "xxx",
+                        icon: "el-icon-eleme",
                         name: "RN管理",
                         path: "/home1"
                     },
                     {
                         id: "1-3",
-                        icon: "xxx",
+                        icon: "el-icon-s-tools",
                         name: "H5管理",
                         path: "/home2"
                     }

@@ -28,6 +28,7 @@ export default {
     text-align: right;
     padding-right: 20px;
     cursor: pointer;
-    border-bottom: 1px solid #e3e3e3;
+    border-bottom: solid 1px #e6e6e6;
+    border-right: solid 1px #e6e6e6;
 }
 </style>

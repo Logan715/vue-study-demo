@@ -5,7 +5,7 @@ const renderMenus = (createElement, menus = []) => {
         if (children && children.length) {
             return createElement("el-submenu", { props: { index: id } }, [
                 createElement("template", { slot: "title" }, [
-                    createElement("i", { class: "el-icon-location" }),
+                    createElement("i", { class: icon }),
                     createElement("span", {
                         slot: "title",
                         domProps: {
@@ -28,7 +28,7 @@ const renderMenus = (createElement, menus = []) => {
                 },
                 [
                     createElement("i", {
-                        class: "el-icon-setting"
+                        class: icon
                     }),
                     createElement("span", {
                         slot: "title",

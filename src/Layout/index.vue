@@ -1,7 +1,7 @@
 <template>
     <el-container>
         <el-header class="header" height="64px">
-            <layout-header></layout-header>
+            <layout-header @onExit="onExit"></layout-header>
         </el-header>
         <el-container class="main">
             <el-aside width="10" class="aside">
@@ -42,6 +42,12 @@ export default {
                 return sessionUser.menus
             }
             return []
+        }
+    },
+    methods: {
+        onExit() {
+            AuthUtil.removeUserSession()
+            this.$router.push("/")
         }
     }
 }
