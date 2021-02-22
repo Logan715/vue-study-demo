@@ -25,9 +25,9 @@ const routes = [
                 component: () => import("../modules/RequestUtil")
             },
             {
-                path: "/home1",
-                name: "home1",
-                component: () => import("../modules/Home1")
+                path: "/vue/v-model",
+                name: "vue-v-model",
+                component: () => import("../modules/Vue/VModel")
             },
             {
                 path: "/home2",

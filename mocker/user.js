@@ -22,6 +22,19 @@ const getMenus = function(req, res) {
         code: 1,
         records: [
             {
+                id: "0",
+                icon: "el-icon-s-promotion",
+                name: "Vue Study",
+                children: [
+                    {
+                        id: "0-0",
+                        icon: "el-icon-s-promotion",
+                        name: "自定义v-model",
+                        path: "/vue/v-model"
+                    }
+                ]
+            },
+            {
                 id: "1",
                 icon: "el-icon-ofly-exit iconfont",
                 name: "版本管理",
