@@ -27,14 +27,13 @@ export default {
     },
     watch: {
         type: function(value, oldValue) {
-            console.log("value", value);
             if (value !== oldValue) {
                 switch (value) {
                     case types.TEST_FAIL:
-                        this.$message(this.note);
+                        this.$message.error(this.note);
                         break;
                     case types.TEST_SUCCESS:
-                        this.$message("成功");
+                        this.$message.success("成功");
                         break;
                     default:
                         break;

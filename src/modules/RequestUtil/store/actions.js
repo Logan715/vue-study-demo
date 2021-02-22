@@ -29,12 +29,30 @@ export default {
     },
 
     async testFail403({ commit }, payload) {
+        ActionUtil.ing(commit, types.TEST_ING);
         const response = await services.testFail403Service(payload);
+        if (response.code === 1) {
+            ActionUtil.success(commit, types.TEST_SUCCESS, response.data);
+        } else {
+            ActionUtil.fail(commit, types.TEST_FAIL, response.note);
+        }
     },
     async testFail404({ commit }, payload) {
+        ActionUtil.ing(commit, types.TEST_ING);
         const response = await services.testFail404Service(payload);
+        if (response.code === 1) {
+            ActionUtil.success(commit, types.TEST_SUCCESS, response.data);
+        } else {
+            ActionUtil.fail(commit, types.TEST_FAIL, response.note);
+        }
     },
     async testFail500({ commit }, payload) {
+        ActionUtil.ing(commit, types.TEST_ING);
         const response = await services.testFail500Service(payload);
+        if (response.code === 1) {
+            ActionUtil.success(commit, types.TEST_SUCCESS, response.data);
+        } else {
+            ActionUtil.fail(commit, types.TEST_FAIL, response.note);
+        }
     }
 };

@@ -5,15 +5,15 @@
 </template>
 
 <script>
-import LoginBox from "./views/LoginBox"
-import { mapActions, mapState } from "vuex"
-import * as types from "./store/types"
+import LoginBox from "./views/LoginBox";
+import { mapActions, mapState } from "vuex";
+import * as types from "./store/types";
 export default {
     components: {
         "login-box": LoginBox
     },
     data() {
-        return {}
+        return {};
     },
     computed: {
         ...mapState("user", ["type", "note", "user"])
@@ -23,12 +23,12 @@ export default {
             if (value !== oldValue) {
                 switch (value) {
                     case types.LOGIN_FAIL:
-                        this.$message(this.note)
-                        break
+                        this.$message(this.note);
+                        break;
                     case types.LOGIN_SUCCESS:
-                        this.$router.push("/home")
+                        this.$router.push("/home");
                     default:
-                        break
+                        break;
                 }
             }
         }
@@ -36,10 +36,10 @@ export default {
     methods: {
         ...mapActions("user", ["login"]),
         onSubmit: function(d) {
-            this.login(d)
+            this.login(d);
         }
     }
-}
+};
 </script>
 <style scoped>
 .login-home {

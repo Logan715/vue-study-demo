@@ -41,7 +41,9 @@ const errorCatch = error => {
     httpStatusErrorEmitter(response);
     return {
         code: -1,
-        note: Object.keys(codeMessage).includes(key => key === status)
+        note: Object.keys(codeMessage)
+            .map(code => parseInt(code))
+            .includes(status)
             ? codeMessage[status]
             : statusText
     };
