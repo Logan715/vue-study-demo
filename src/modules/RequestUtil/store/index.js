@@ -1,13 +1,12 @@
 import * as types from "./types";
-// import * as globalTypes from "../../../store/globalTypes"
+// import * as globalTypes from "../../../store/globalTypes";
 import actions from "./actions";
-import AuthUtil from "../../../utils/AuthUtil";
 import ActionUtil from "../../../utils/ActionUtil";
 
 const state = () => ({
     type: undefined,
     note: undefined,
-    sessionUser: AuthUtil.getSessionUser()
+    info: {}
 });
 
 // mutations
@@ -19,9 +18,9 @@ const mutations = {
         state.type = type;
         state.note = note;
     },
-    [types.LOGIN_SUCCESS](state, sessionUser) {
-        state.type = types.LOGIN_SUCCESS;
-        state.sessionUser = sessionUser;
+    [types.TEST_SUCCESS](state, info) {
+        state.type = types.TEST_SUCCESS;
+        state.info = info;
     }
 };
 

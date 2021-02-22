@@ -1,27 +1,36 @@
-import Vue from "vue"
-import App from "./App.vue"
-import ElementUI from "element-ui"
-import router from "./router/index.js"
-import store from "./store"
-Vue.config.productionTip = false
-import AuthUtil from "./utils/AuthUtil"
-import "element-ui/lib/theme-chalk/index.css"
-import "./assets/iconfont/iconfont.css"
-Vue.use(ElementUI)
+import Vue from "vue";
+import App from "./App.vue";
+import ElementUI, { Message } from "element-ui";
+import router from "./router/index.js";
+import store from "./store";
+import AuthUtil from "./utils/AuthUtil";
+
+import "element-ui/lib/theme-chalk/index.css";
+import "./assets/iconfont/iconfont.css";
+import RequestUtil from "./utils/RequestUtil";
+
+Vue.config.productionTip = false;
+Vue.use(ElementUI);
 
 // TODO 打印路由信息  回头去掉
 router.beforeEach((to, from, next) => {
-    console.log(to, from)
-    const { path } = to
+    const { path } = to;
     if (!["/", "/login"].includes(path) && !AuthUtil.getSessionUser()) {
-        next("/login")
+        next("/login");
     } else {
-        next()
+        next();
     }
-})
+});
+
+RequestUtil.httpStatusErrorListener(response => {
+    if (response.status === 403) {
+        Message.success("无权限, 请先登录有权限账号");
+        router.push("/login");
+    }
+});
 
 new Vue({
     router,
     store,
     render: h => h(App)
-}).$mount("#app")
+}).$mount("#app");

@@ -1,5 +1,5 @@
 const login = function(req, res) {
-    const { pwd, loginId } = req.body
+    const { pwd, loginId } = req.body;
     if (pwd === "888888" && loginId === "admin") {
         return res.json({
             code: 1,
@@ -8,14 +8,14 @@ const login = function(req, res) {
                 loginId: "admin",
                 sex: 6
             }
-        })
+        });
     } else {
         return res.json({
             note: `账号或者密码不正确$|${loginId}`,
             code: -1
-        })
+        });
     }
-}
+};
 
 const getMenus = function(req, res) {
     return res.json({
@@ -28,9 +28,9 @@ const getMenus = function(req, res) {
                 children: [
                     {
                         id: "1-1",
-                        icon: "el-icon-platform-eleme",
-                        name: "原生管理",
-                        path: "/home"
+                        icon: "el-icon-s-promotion",
+                        name: "RequestUtil",
+                        path: "/RequestUtil"
                     },
                     {
                         id: "1-2",
@@ -47,10 +47,10 @@ const getMenus = function(req, res) {
                 ]
             }
         ]
-    })
-}
+    });
+};
 
 exports.default = {
     "POST /api/user/auth": login,
     "GET /api/user/menus": getMenus
-}
+};

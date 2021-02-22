@@ -1,20 +1,21 @@
-const user = require("./user")
-const delay = require("mocker-api/lib/delay")
+const user = require("./user");
+const test = require("./test");
+const delay = require("mocker-api/lib/delay");
 
 // 是否禁用代理
-const noProxy = process.env.NO_PROXY === "true"
+const noProxy = process.env.NO_PROXY === "true";
 
 const proxy = {
     // Priority processing.
     _proxy: {
-        priority: "mocker",
+        priority: "proxy",
         proxy: {
             "/repos/(.*)": "https://api.github.com/"
             // '/repos/jaywcjlove/webpack-api-mocker': 'https://api.github.com/repos/jaywcjlove/webpack-api-mocker',
         },
         changeHost: true
     },
-    ...user.default
-}
-console.log("proxy", proxy)
-module.exports = noProxy ? {} : delay(proxy, 100)
+    ...user.default,
+    ...test.default
+};
+module.exports = noProxy ? {} : delay(proxy, 100);

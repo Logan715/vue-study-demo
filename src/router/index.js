@@ -1,7 +1,7 @@
-import Vue from "vue"
-import VueRouter from "vue-router"
+import Vue from "vue";
+import VueRouter from "vue-router";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
     {
@@ -20,9 +20,9 @@ const routes = [
         component: () => import("../Layout"),
         children: [
             {
-                path: "/home",
+                path: "/RequestUtil",
                 name: "home",
-                component: () => import("../modules/Home")
+                component: () => import("../modules/RequestUtil")
             },
             {
                 path: "/home1",
@@ -36,8 +36,8 @@ const routes = [
             }
         ]
     }
-]
+];
 
 export default new VueRouter({
     routes
-})
+});
