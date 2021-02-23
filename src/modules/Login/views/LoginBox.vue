@@ -15,7 +15,7 @@
             <el-form-item class="login-button">
                 <el-button
                     type="primary"
-                    @click="submitForm('loginForm')"
+                    @click.prevent="submitForm('loginForm')"
                     native-type="submit"
                 >
                     登录

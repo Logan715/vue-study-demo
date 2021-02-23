@@ -23,39 +23,33 @@ const getMenus = function(req, res) {
         records: [
             {
                 id: "0",
-                icon: "el-icon-s-promotion",
+                icon: "el-icon-ofly-vue iconfont",
                 name: "Vue Study",
                 children: [
                     {
                         id: "0-0",
-                        icon: "el-icon-s-promotion",
+                        icon: "el-icon-ofly-v-model iconfont",
                         name: "自定义v-model",
                         path: "/vue/v-model"
+                    },
+                    {
+                        id: "0-0",
+                        icon: "el-icon-ofly-sync iconfont",
+                        name: ".sync 修饰符",
+                        path: "/vue/sync"
                     }
                 ]
             },
             {
                 id: "1",
-                icon: "el-icon-ofly-exit iconfont",
-                name: "版本管理",
+                icon: "el-icon-ofly-tools iconfont",
+                name: "工具",
                 children: [
                     {
                         id: "1-1",
-                        icon: "el-icon-s-promotion",
+                        icon: "el-icon-ofly-request iconfont",
                         name: "RequestUtil",
                         path: "/RequestUtil"
-                    },
-                    {
-                        id: "1-2",
-                        icon: "el-icon-eleme",
-                        name: "RN管理",
-                        path: "/home1"
-                    },
-                    {
-                        id: "1-3",
-                        icon: "el-icon-s-tools",
-                        name: "H5管理",
-                        path: "/home2"
                     }
                 ]
             }

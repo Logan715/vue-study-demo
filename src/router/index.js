@@ -30,9 +30,9 @@ const routes = [
                 component: () => import("../modules/Vue/VModel")
             },
             {
-                path: "/home2",
-                name: "home2",
-                component: () => import("../modules/Home2")
+                path: "/vue/sync",
+                name: "vue-sync",
+                component: () => import("../modules/Vue/Sync")
             }
         ]
     }

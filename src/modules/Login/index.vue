@@ -8,6 +8,8 @@
 import LoginBox from "./views/LoginBox";
 import { mapActions, mapState } from "vuex";
 import * as types from "./store/types";
+import AuthUtil from "../..//utils/AuthUtil";
+import { findFirstPath } from "./loginUtil";
 export default {
     components: {
         "login-box": LoginBox
@@ -23,10 +25,17 @@ export default {
             if (value !== oldValue) {
                 switch (value) {
                     case types.LOGIN_FAIL:
-                        this.$message(this.note);
+                        this.$message.error(this.note);
                         break;
                     case types.LOGIN_SUCCESS:
-                        this.$router.push("/home");
+                        const { menus } = AuthUtil.getSessionUser();
+                        const firstPath = findFirstPath(menus);
+                        if (firstPath) {
+                            this.$router.push(firstPath);
+                        } else {
+                            this.$message.error("找不到对应的菜单");
+                        }
+
                     default:
                         break;
                 }
@@ -47,6 +56,10 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../../assets/loginback.jpg");
+    background-image: url("../../assets/loginback.svg");
+    background-color: #ffffff;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
 }
 </style>

@@ -7,7 +7,6 @@ import ActionUtil from "../../../utils/ActionUtil";
 export default {
     async login({ commit }, payload) {
         ActionUtil.ing(commit, types.LOGIN_ING);
-        // commit(globalTypes.ING, types.LOGIN_ING)
         try {
             const response = await services.loginService(payload);
             if (response.code === 1) {

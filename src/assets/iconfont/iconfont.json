@@ -6,6 +6,41 @@
   "description": "ofly-vue-demo 测试用",
   "glyphs": [
     {
+      "icon_id": "1308207",
+      "name": "sync",
+      "font_class": "sync",
+      "unicode": "e686",
+      "unicode_decimal": 59014
+    },
+    {
+      "icon_id": "426077",
+      "name": "export network_HD",
+      "font_class": "request",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "11891796",
+      "name": "model",
+      "font_class": "v-model",
+      "unicode": "e66e",
+      "unicode_decimal": 58990
+    },
+    {
+      "icon_id": "18670886",
+      "name": "tool set",
+      "font_class": "tools",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "13744032",
+      "name": "vue",
+      "font_class": "vue",
+      "unicode": "e69a",
+      "unicode_decimal": 59034
+    },
+    {
       "icon_id": "6808025",
       "name": "Mouse",
       "font_class": "mouse",
