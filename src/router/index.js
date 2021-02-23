@@ -33,6 +33,11 @@ const routes = [
                 path: "/vue/sync",
                 name: "vue-sync",
                 component: () => import("../modules/Vue/Sync")
+            },
+            {
+                path: "/vue/slot",
+                name: "vue-slot",
+                component: () => import("../modules/Vue/Slot")
             }
         ]
     }

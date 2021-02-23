@@ -7,5 +7,6 @@
 <style scoped>
 .content-main {
     margin: 10px;
+    width: 100%;
 }
 </style>

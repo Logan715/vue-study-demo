@@ -20,11 +20,11 @@
 </template>
 
 <script>
-import LayoutHeader from "./views/LayoutHeader"
-import LayoutAside from "./views/LayoutAside"
-import LayoutContent from "./views/LayoutContent"
-import LayoutFooter from "./views/LayoutFooter"
-import AuthUtil from "../utils/AuthUtil"
+import LayoutHeader from "./views/LayoutHeader";
+import LayoutAside from "./views/LayoutAside";
+import LayoutContent from "./views/LayoutContent";
+import LayoutFooter from "./views/LayoutFooter";
+import AuthUtil from "../utils/AuthUtil";
 export default {
     components: {
         "layout-header": LayoutHeader,
@@ -33,24 +33,24 @@ export default {
         "layout-footer": LayoutFooter
     },
     data() {
-        return {}
+        return {};
     },
     computed: {
         menus: function() {
-            const sessionUser = AuthUtil.getSessionUser()
+            const sessionUser = AuthUtil.getSessionUser();
             if (sessionUser && sessionUser.menus) {
-                return sessionUser.menus
+                return sessionUser.menus;
             }
-            return []
+            return [];
         }
     },
     methods: {
         onExit() {
-            AuthUtil.removeUserSession()
-            this.$router.push("/")
+            AuthUtil.removeUserSession();
+            this.$router.push("/");
         }
     }
-}
+};
 </script>
 <style scoped>
 .header {
@@ -69,6 +69,7 @@ export default {
     flex-direction: column;
     padding: 0;
     background-color: rgb(228, 228, 228);
+    overflow-x: hidden;
 }
 .footer {
     background-color: rgb(228, 228, 228);

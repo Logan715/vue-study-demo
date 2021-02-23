@@ -33,10 +33,16 @@ const getMenus = function(req, res) {
                         path: "/vue/v-model"
                     },
                     {
-                        id: "0-0",
+                        id: "0-1",
                         icon: "el-icon-ofly-sync iconfont",
                         name: ".sync 修饰符",
                         path: "/vue/sync"
+                    },
+                    {
+                        id: "0-2",
+                        icon: "el-icon-ofly-slot iconfont",
+                        name: "slot操作",
+                        path: "/vue/slot"
                     }
                 ]
             },

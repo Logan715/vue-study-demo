@@ -6,6 +6,13 @@
   "description": "ofly-vue-demo 测试用",
   "glyphs": [
     {
+      "icon_id": "3561757",
+      "name": "uE951-res-slot",
+      "font_class": "slot",
+      "unicode": "e6c3",
+      "unicode_decimal": 59075
+    },
+    {
       "icon_id": "1308207",
       "name": "sync",
       "font_class": "sync",
