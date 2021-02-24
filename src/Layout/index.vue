@@ -5,7 +5,10 @@
         </el-header>
         <el-container class="main">
             <el-aside width="10" class="aside">
-                <layout-aside :menus="menus"></layout-aside>
+                <layout-aside
+                    :menus="menus"
+                    :menu-active-key="menuActiveKey"
+                ></layout-aside>
             </el-aside>
             <el-main class="content">
                 <el-container>
@@ -25,6 +28,8 @@ import LayoutAside from "./views/LayoutAside";
 import LayoutContent from "./views/LayoutContent";
 import LayoutFooter from "./views/LayoutFooter";
 import AuthUtil from "../utils/AuthUtil";
+import { findActiveMenuKey } from "./layout";
+
 export default {
     components: {
         "layout-header": LayoutHeader,
@@ -33,8 +38,11 @@ export default {
         "layout-footer": LayoutFooter
     },
     data() {
-        return {};
+        return {
+            menuActiveKey: ""
+        };
     },
+
     computed: {
         menus: function() {
             const sessionUser = AuthUtil.getSessionUser();
@@ -44,11 +52,22 @@ export default {
             return [];
         }
     },
+    created() {
+        const { menus } = AuthUtil.getSessionUser();
+        const menuActiveKey = findActiveMenuKey(menus, this.$route.path);
+        this.$data.menuActiveKey = menuActiveKey;
+    },
     methods: {
         onExit() {
             AuthUtil.removeUserSession();
-            this.$router.push("/");
+            this.$router.push("/login");
         }
+    },
+    beforeRouteUpdate(to, from, next) {
+        const { menus } = AuthUtil.getSessionUser();
+        const menuActiveKey = findActiveMenuKey(menus, to.path);
+        this.$data.menuActiveKey = menuActiveKey;
+        next();
     }
 };
 </script>

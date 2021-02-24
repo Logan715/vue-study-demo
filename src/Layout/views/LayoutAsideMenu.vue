@@ -1,7 +1,7 @@
 <script>
 const renderMenus = (createElement, menus = []) => {
     const list = menus.map(menu => {
-        const { id, children, path, icon, name } = menu
+        const { id, children, path, icon, name } = menu;
         if (children && children.length) {
             return createElement("el-submenu", { props: { index: id } }, [
                 createElement("template", { slot: "title" }, [
@@ -14,13 +14,13 @@ const renderMenus = (createElement, menus = []) => {
                     })
                 ]),
                 ...renderMenus(createElement, children)
-            ])
+            ]);
         } else {
             return createElement(
                 "el-menu-item",
                 {
                     props: {
-                        index: path,
+                        index: id,
                         route: {
                             path: path
                         }
@@ -37,11 +37,11 @@ const renderMenus = (createElement, menus = []) => {
                         }
                     })
                 ]
-            )
+            );
         }
-    })
-    return list
-}
+    });
+    return list;
+};
 export default {
     props: {
         menus: {
@@ -50,6 +50,10 @@ export default {
         },
         expanded: {
             type: Boolean,
+            required: true
+        },
+        menuActiveKey: {
+            type: String,
             required: true
         }
     },
@@ -60,13 +64,14 @@ export default {
                 class: "menus",
                 props: {
                     collapse: !this.expanded,
-                    router: true
+                    router: true,
+                    "default-active": this.menuActiveKey
                 }
             },
             renderMenus(createElement, this.menus)
-        )
+        );
     }
-}
+};
 </script>
 <style scoped>
 .menus {

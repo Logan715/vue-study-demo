@@ -24,6 +24,8 @@
     "eslint-plugin-vue": "^6.2.2",
     "mocker-api": "^2.8.1",
     "mockjs": "^1.1.0",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^11.0.1",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {

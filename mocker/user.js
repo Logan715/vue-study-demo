@@ -43,6 +43,12 @@ const getMenus = function(req, res) {
                         icon: "el-icon-ofly-slot iconfont",
                         name: "slot操作",
                         path: "/vue/slot"
+                    },
+                    {
+                        id: "0-3",
+                        icon: "el-icon-ofly-transition iconfont",
+                        name: "transition",
+                        path: "/vue/transition"
                     }
                 ]
             },

@@ -7,12 +7,13 @@
         <layout-aside-menu
             :menus="menus"
             :expanded="expanded"
+            :menu-active-key="menuActiveKey"
         ></layout-aside-menu>
     </div>
 </template>
 <script>
-import LayoutAsideMenu from "./LayoutAsideMenu"
-import LayoutAsideMenuToggle from "./LayoutAsideMenuToggle"
+import LayoutAsideMenu from "./LayoutAsideMenu";
+import LayoutAsideMenuToggle from "./LayoutAsideMenuToggle";
 export default {
     components: {
         "layout-aside-menu": LayoutAsideMenu,
@@ -22,24 +23,28 @@ export default {
         menus: {
             type: Array,
             required: true
+        },
+        menuActiveKey: {
+            type: String,
+            required: true
         }
     },
     data() {
         return {
             width: "200px",
             expanded: true
-        }
+        };
     },
     computed: {
         menusStr() {
-            return JSON.stringify(this.menus)
+            return JSON.stringify(this.menus);
         }
     },
     methods: {
         onToggle(expanded) {
-            this.$data.expanded = expanded
-            this.$data.width = expanded ? "200px" : "65px"
+            this.$data.expanded = expanded;
+            this.$data.width = expanded ? "200px" : "65px";
         }
     }
-}
+};
 </script>

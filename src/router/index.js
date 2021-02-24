@@ -38,6 +38,11 @@ const routes = [
                 path: "/vue/slot",
                 name: "vue-slot",
                 component: () => import("../modules/Vue/Slot")
+            },
+            {
+                path: "/vue/transition",
+                name: "vue-transition",
+                component: () => import("../modules/Vue/Transition")
             }
         ]
     }

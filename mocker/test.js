@@ -1,5 +1,6 @@
+const mockjs = require("mockjs");
 const testSuccess = function(req, res) {
-    return res.json({ code: 1, data: { name: "Logan" } });
+    return res.json({ code: 1, data: { name: mockjs.mock("@cfirst@clast") } });
 };
 
 const testFail = function(req, res) {
