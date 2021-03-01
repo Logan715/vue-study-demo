@@ -22,7 +22,7 @@ import { mapActions, mapState } from "vuex";
 import * as types from "./store/types";
 export default {
     computed: {
-        ...mapState("test", ["type", "note", "info"]),
+        ...mapState("requestUtil", ["type", "note", "info"]),
         dataStr: vm => JSON.stringify(vm.info)
     },
     watch: {
@@ -42,7 +42,7 @@ export default {
         }
     },
     methods: {
-        ...mapActions("test", [
+        ...mapActions("requestUtil", [
             "testSuccess",
             "testFail",
             "testFail403",

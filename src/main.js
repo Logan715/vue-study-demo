@@ -7,6 +7,7 @@ import AuthUtil from "./utils/AuthUtil";
 
 import "element-ui/lib/theme-chalk/index.css";
 import "./assets/iconfont/iconfont.css";
+import "./assets/global.css";
 import RequestUtil from "./utils/RequestUtil";
 
 Vue.config.productionTip = false;

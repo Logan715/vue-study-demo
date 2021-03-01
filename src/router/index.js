@@ -43,6 +43,21 @@ const routes = [
                 path: "/vue/transition",
                 name: "vue-transition",
                 component: () => import("../modules/Vue/Transition")
+            },
+            {
+                path: "/animation/animation",
+                name: "animation-animation",
+                component: () => import("../modules/Animation/Animation")
+            },
+            {
+                path: "/animation/transition",
+                name: "animation-transition",
+                component: () => import("../modules/Animation/Transition")
+            },
+            {
+                path: "/animation/transform",
+                name: "animation-transform",
+                component: () => import("../modules/Animation/Transform")
             }
         ]
     }

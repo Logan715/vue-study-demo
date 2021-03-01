@@ -24,7 +24,7 @@ const getMenus = function(req, res) {
             {
                 id: "0",
                 icon: "el-icon-ofly-vue iconfont",
-                name: "Vue Study",
+                name: "Vue",
                 children: [
                     {
                         id: "0-0",
@@ -62,6 +62,31 @@ const getMenus = function(req, res) {
                         icon: "el-icon-ofly-request iconfont",
                         name: "RequestUtil",
                         path: "/RequestUtil"
+                    }
+                ]
+            },
+            {
+                id: "2",
+                icon: "el-icon-ofly-animation iconfont",
+                name: "css动画",
+                children: [
+                    {
+                        id: "2-1",
+                        icon: "el-icon-ofly-animation iconfont",
+                        name: "动画",
+                        path: "/animation/animation"
+                    },
+                    {
+                        id: "2-2",
+                        icon: "el-icon-ofly-transition iconfont",
+                        name: "渐变",
+                        path: "/animation/transition"
+                    },
+                    {
+                        id: "2-3",
+                        icon: "el-icon-ofly-transform iconfont",
+                        name: "旋转",
+                        path: "/animation/transform"
                     }
                 ]
             }
