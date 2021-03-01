@@ -1,11 +1,15 @@
 <template>
     <el-container>
         <el-header class="header" height="64px">
-            <layout-header @onExit="onExit"></layout-header>
+            <layout-header
+                @onExit="onExit"
+                :expanded.sync="expanded"
+            ></layout-header>
         </el-header>
         <el-container class="main">
             <el-aside width="10" class="aside">
                 <layout-aside
+                    :expanded="expanded"
                     :menus="menus"
                     :menu-active-key="menuActiveKey"
                 ></layout-aside>
@@ -39,7 +43,8 @@ export default {
     },
     data() {
         return {
-            menuActiveKey: ""
+            menuActiveKey: "",
+            expanded: true
         };
     },
 

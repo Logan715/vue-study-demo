@@ -1,6 +1,10 @@
 <template>
     <div class="header">
         <div class="header-logo">
+            <layout-menu-toggle
+                :expanded="expanded"
+                @onToggle="onToggle"
+            ></layout-menu-toggle>
             <i class="el-icon-ofly-mouse iconfont logo"></i>
             <span>OFLY MOUSE</span>
         </div>
@@ -14,13 +18,28 @@
 </template>
 
 <script>
+import LayoutMenuToggle from "./LayoutMenuToggle";
 export default {
+    components: {
+        "layout-menu-toggle": LayoutMenuToggle
+    },
+    props: {
+        expanded: {
+            type: Boolean,
+            required: true
+        }
+    },
+    methods: {
+        onToggle() {
+            this.$emit("update:expanded", !this.expanded);
+        }
+    }
     // methods: {
     //   exit() {
     //     this.$emit('onExit')
     //   }
     // }
-}
+};
 </script>
 
 <style scoped>

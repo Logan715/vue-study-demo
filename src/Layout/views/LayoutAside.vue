@@ -1,23 +1,16 @@
 <template>
-    <div :style="{ width: width }">
-        <layout-aside-menu-toggle
-            :expanded="expanded"
-            @onToggle="onToggle"
-        ></layout-aside-menu-toggle>
-        <layout-aside-menu
-            :menus="menus"
-            :expanded="expanded"
-            :menu-active-key="menuActiveKey"
-        ></layout-aside-menu>
-    </div>
+    <layout-aside-menu
+        :menus="menus"
+        :expanded="expanded"
+        :menu-active-key="menuActiveKey"
+    ></layout-aside-menu>
 </template>
 <script>
 import LayoutAsideMenu from "./LayoutAsideMenu";
-import LayoutAsideMenuToggle from "./LayoutAsideMenuToggle";
+// import gsap from "gsap";
 export default {
     components: {
-        "layout-aside-menu": LayoutAsideMenu,
-        "layout-aside-menu-toggle": LayoutAsideMenuToggle
+        "layout-aside-menu": LayoutAsideMenu
     },
     props: {
         menus: {
@@ -27,24 +20,17 @@ export default {
         menuActiveKey: {
             type: String,
             required: true
+        },
+        expanded: {
+            type: Boolean,
+            required: true
         }
     },
     data() {
         return {
             width: "200px",
-            expanded: true
+            transition: "toggle"
         };
-    },
-    computed: {
-        menusStr() {
-            return JSON.stringify(this.menus);
-        }
-    },
-    methods: {
-        onToggle(expanded) {
-            this.$data.expanded = expanded;
-            this.$data.width = expanded ? "200px" : "65px";
-        }
     }
 };
 </script>
