@@ -6,6 +6,13 @@
   "description": "ofly-vue-demo 测试用",
   "glyphs": [
     {
+      "icon_id": "8952769",
+      "name": "ellipsis-v",
+      "font_class": "ellipsis-v",
+      "unicode": "e801",
+      "unicode_decimal": 59393
+    },
+    {
       "icon_id": "15617235",
       "name": "transform",
       "font_class": "transform",

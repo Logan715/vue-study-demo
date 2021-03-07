@@ -57,6 +57,11 @@ export default {
             required: true
         }
     },
+    methods: {
+        select(id) {
+            this.$emit("select", id);
+        }
+    },
     render(createElement) {
         return createElement(
             "el-menu",
@@ -64,8 +69,11 @@ export default {
                 class: "menus",
                 props: {
                     collapse: !this.expanded,
-                    router: true,
+                    router: false,
                     "default-active": this.menuActiveKey
+                },
+                on: {
+                    select: this.select
                 }
             },
             renderMenus(createElement, this.menus)

@@ -14,7 +14,6 @@ Vue.config.productionTip = false;
 Vue.use(ElementUI);
 
 router.beforeEach((to, from, next) => {
-    console.log(from, to);
     const { path } = to;
     if (!["/", "/login"].includes(path) && !AuthUtil.getSessionUser()) {
         next("/login");

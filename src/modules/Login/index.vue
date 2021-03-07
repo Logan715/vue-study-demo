@@ -28,13 +28,13 @@ export default {
                         this.$message.error(this.note);
                         break;
                     case types.LOGIN_SUCCESS:
-                        const { menus } = AuthUtil.getSessionUser();
-                        const firstPath = findFirstPath(menus);
-                        if (firstPath) {
-                            this.$router.push(firstPath);
-                        } else {
-                            this.$message.error("找不到对应的菜单");
-                        }
+                        // const { menus } = AuthUtil.getSessionUser();
+                        // const firstPath = findFirstPath(menus);
+                        // if (firstPath) {
+                        this.$router.push("/home");
+                    // } else {
+                    // this.$message.error("找不到对应的菜单");
+                    // }
 
                     default:
                         break;

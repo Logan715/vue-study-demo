@@ -11,3 +11,17 @@ export const findActiveMenuKey = (menus, activePath) => {
         }
     }
 };
+
+export const findMenu = (menus, primaryKey) => {
+    for (let index = 0; index < menus.length; index++) {
+        const { id, children } = menus[index];
+        if (primaryKey === id) {
+            return menus[index];
+        } else if (children?.length) {
+            const menu = findMenu(children, primaryKey);
+            if (menu) {
+                return menu;
+            }
+        }
+    }
+};

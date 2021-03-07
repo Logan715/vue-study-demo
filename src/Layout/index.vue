@@ -12,11 +12,16 @@
                     :expanded="expanded"
                     :menus="menus"
                     :menu-active-key="menuActiveKey"
+                    @select="select"
                 ></layout-aside>
             </el-aside>
             <el-main class="content">
                 <el-container>
-                    <layout-content></layout-content>
+                    <layout-content
+                        :tabs="tabs"
+                        v-model="menuActiveKey"
+                        @tab-remove="tabRemove"
+                    ></layout-content>
                 </el-container>
                 <el-footer class="footer" height="32px">
                     <layout-footer></layout-footer>
@@ -29,11 +34,11 @@
 <script>
 import LayoutHeader from "./views/LayoutHeader";
 import LayoutAside from "./views/LayoutAside";
-import LayoutContent from "./views/LayoutContent";
+import LayoutContent from "./views/LayoutContent.vue";
 import LayoutFooter from "./views/LayoutFooter";
 import AuthUtil from "../utils/AuthUtil";
-import { findActiveMenuKey } from "./layout";
-
+import { findMenu } from "./layout";
+import modulesX from "../modules/index";
 export default {
     components: {
         "layout-header": LayoutHeader,
@@ -44,7 +49,8 @@ export default {
     data() {
         return {
             menuActiveKey: "",
-            expanded: true
+            expanded: true,
+            tabs: []
         };
     },
 
@@ -58,14 +64,46 @@ export default {
         }
     },
     created() {
-        const { menus } = AuthUtil.getSessionUser();
-        const menuActiveKey = findActiveMenuKey(menus, this.$route.path);
-        this.$data.menuActiveKey = menuActiveKey;
+        // const { menus } = AuthUtil.getSessionUser();
+        // const menuActiveKey = findActiveMenuKey(menus, this.$route.path);
+        // this.$data.menuActiveKey = menuActiveKey;
     },
     methods: {
         onExit() {
             AuthUtil.removeUserSession();
             this.$router.push("/login");
+        },
+        select(id) {
+            const menu = findMenu(this.menus, id);
+            const tabMenu = this.tabs.find(tab => tab.id === id);
+            if (!tabMenu) {
+                if (modulesX[id] && menu) {
+                    this.tabs.push({
+                        ...menu,
+                        component: modulesX[id]
+                    });
+                    this.menuActiveKey = id;
+                }
+            } else {
+                this.menuActiveKey = id;
+            }
+        },
+        tabRemove(id) {
+            const index = this.tabs.findIndex(tab => tab.id === id);
+            const tab = this.tabs[index];
+            // this.tabs.splice(index, 1);
+            const nextTabs = this.tabs.filter(tab => tab.id !== id);
+            // 定位 menuActiveKey
+            if (tab.id === id) {
+                if (index > 0) {
+                    this.menuActiveKey = this.tabs[index - 1].id;
+                } else if (this.tabs.length > 1) {
+                    this.menuActiveKey = this.tabs[index + 1].id;
+                } else {
+                    console.log("为什么没进来", this.tabs);
+                }
+            }
+            this.tabs = nextTabs;
         }
     },
     beforeRouteUpdate(to, from, next) {

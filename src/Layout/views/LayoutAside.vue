@@ -3,11 +3,12 @@
         :menus="menus"
         :expanded="expanded"
         :menu-active-key="menuActiveKey"
+        @select="select"
     ></layout-aside-menu>
 </template>
 <script>
 import LayoutAsideMenu from "./LayoutAsideMenu";
-// import gsap from "gsap";
+
 export default {
     components: {
         "layout-aside-menu": LayoutAsideMenu
@@ -31,6 +32,11 @@ export default {
             width: "200px",
             transition: "toggle"
         };
+    },
+    methods: {
+        select(id) {
+            this.$emit("select", id);
+        }
     }
 };
 </script>

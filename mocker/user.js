@@ -22,33 +22,29 @@ const getMenus = function(req, res) {
         code: 1,
         records: [
             {
-                id: "0",
+                id: "vue",
                 icon: "el-icon-ofly-vue iconfont",
                 name: "Vue",
                 children: [
                     {
-                        id: "0-0",
+                        id: "vModal",
                         icon: "el-icon-ofly-v-model iconfont",
-                        name: "自定义v-model",
-                        path: "/vue/v-model"
+                        name: "自定义v-model"
                     },
                     {
-                        id: "0-1",
+                        id: "vueSync",
                         icon: "el-icon-ofly-sync iconfont",
-                        name: ".sync 修饰符",
-                        path: "/vue/sync"
+                        name: ".sync 修饰符"
                     },
                     {
-                        id: "0-2",
+                        id: "vueSlot",
                         icon: "el-icon-ofly-slot iconfont",
-                        name: "slot操作",
-                        path: "/vue/slot"
+                        name: "slot操作"
                     },
                     {
-                        id: "0-3",
+                        id: "vueTransition",
                         icon: "el-icon-ofly-transition iconfont",
-                        name: "transition",
-                        path: "/vue/transition"
+                        name: "transition"
                     }
                 ]
             },
@@ -58,10 +54,9 @@ const getMenus = function(req, res) {
                 name: "工具",
                 children: [
                     {
-                        id: "1-1",
+                        id: "requestUtil",
                         icon: "el-icon-ofly-request iconfont",
-                        name: "RequestUtil",
-                        path: "/RequestUtil"
+                        name: "RequestUtil"
                     }
                 ]
             },
@@ -71,22 +66,31 @@ const getMenus = function(req, res) {
                 name: "css动画",
                 children: [
                     {
-                        id: "2-1",
+                        id: "animationAnimation",
                         icon: "el-icon-ofly-animation iconfont",
-                        name: "动画",
-                        path: "/animation/animation"
+                        name: "动画"
                     },
                     {
-                        id: "2-2",
+                        id: "animationTransition",
                         icon: "el-icon-ofly-transition iconfont",
-                        name: "渐变",
-                        path: "/animation/transition"
+                        name: "渐变"
                     },
                     {
-                        id: "2-3",
+                        id: "animationTransform",
                         icon: "el-icon-ofly-transform iconfont",
-                        name: "旋转",
-                        path: "/animation/transform"
+                        name: "旋转"
+                    }
+                ]
+            },
+            {
+                id: "3",
+                icon: "el-icon-ofly-animation iconfont",
+                name: "其他",
+                children: [
+                    {
+                        id: "dragAndDrop",
+                        icon: "el-icon-ofly-animation iconfont",
+                        name: "拖拽"
                     }
                 ]
             }

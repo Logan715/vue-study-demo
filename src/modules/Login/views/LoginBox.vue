@@ -59,7 +59,6 @@ export default {
                 if (valid) {
                     this.$emit("onSubmit", this.$data.loginForm);
                 } else {
-                    console.log("error submit!!");
                     return false;
                 }
             });
