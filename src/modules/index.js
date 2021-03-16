@@ -18,6 +18,8 @@ export default {
         import(
             /* webpackChunkName: "animationTransition" */ "./Animation/Transition"
         ),
-    dragAndDrop: () =>
-        import(/* webpackChunkName: "dragAndDrop" */ "./Undefined/DragAndDrop")
+        dragAndDrop: () =>
+        import(/* webpackChunkName: "dragAndDrop" */ "./Undefined/DragAndDrop"),
+        flexTable: () =>
+        import(/* webpackChunkName: "dragAndDrop" */ "./Undefined/FlexTable")
 };

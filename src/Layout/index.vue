@@ -99,11 +99,12 @@ export default {
                     this.menuActiveKey = this.tabs[index - 1].id;
                 } else if (this.tabs.length > 1) {
                     this.menuActiveKey = this.tabs[index + 1].id;
-                } else {
-                    console.log("为什么没进来", this.tabs);
                 }
             }
             this.tabs = nextTabs;
+            if (nextTabs.length === 0) {
+                this.menuActiveKey = "";
+            }
         }
     },
     beforeRouteUpdate(to, from, next) {

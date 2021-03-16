@@ -18,21 +18,18 @@
                 <i class="el-icon-ofly-ellipsis-v iconfont operation"></i>
             </div>
         </div>
+       
         <div v-show="!draging" class="drag-item-content">
-            {{ config.content }}
-        </div>
-        <div v-show="!draging" class="drag-item-content">
-            <lazy-component></lazy-component>
+            <!-- <lazy-component></lazy-component> -->
+            <component :is="config.component"></component>
         </div>
     </div>
 </template>
 
 <script>
-import LazyComponent from "./LazyComponent.vue";
+// import LazyComponent from "./LazyComponent.vue";
+
 export default {
-    components: {
-        "lazy-component": LazyComponent
-    },
     props: {
         draging: {
             type: Boolean,
@@ -50,7 +47,8 @@ export default {
     computed: {
         notDrag() {
             return !this.draging;
-        }
+        },
+        
     },
     methods: {
         dragstart() {

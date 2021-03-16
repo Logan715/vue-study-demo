@@ -8,8 +8,6 @@
 import LoginBox from "./views/LoginBox";
 import { mapActions, mapState } from "vuex";
 import * as types from "./store/types";
-import AuthUtil from "../..//utils/AuthUtil";
-import { findFirstPath } from "./loginUtil";
 export default {
     components: {
         "login-box": LoginBox

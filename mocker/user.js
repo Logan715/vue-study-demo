@@ -91,6 +91,11 @@ const getMenus = function(req, res) {
                         id: "dragAndDrop",
                         icon: "el-icon-ofly-animation iconfont",
                         name: "拖拽"
+                    },
+                    {
+                        id: "flexTable",
+                        icon: "el-icon-ofly-animation iconfont",
+                        name: "el-table自适应"
                     }
                 ]
             }
