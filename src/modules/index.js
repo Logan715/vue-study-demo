@@ -21,5 +21,7 @@ export default {
         dragAndDrop: () =>
         import(/* webpackChunkName: "dragAndDrop" */ "./Undefined/DragAndDrop"),
         flexTable: () =>
-        import(/* webpackChunkName: "dragAndDrop" */ "./Undefined/FlexTable")
+        import(/* webpackChunkName: "dragAndDrop" */ "./Undefined/FlexTable"),
+    clipboard: () =>
+        import(/* webpackChunkName: "Clipboard" */ "./Other/Clipboard")
 };

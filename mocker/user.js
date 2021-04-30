@@ -96,9 +96,14 @@ const getMenus = function(req, res) {
                         id: "flexTable",
                         icon: "el-icon-ofly-animation iconfont",
                         name: "el-table自适应"
+                    },
+                    {
+                        id: "clipboard",
+                        icon: "el-icon-ofly-request iconfont",
+                        name: "Clipboard"
                     }
                 ]
-            }
+            },
         ]
     });
 };

@@ -15,9 +15,36 @@ const routes = [
         component: () => import("../modules/Login")
     },
     {
-        path: "/home",
+        path: "*",
         name: "home",
-        component: () => import("../Layout")
+        component: () => import("../Layout"),
+        children: [
+            {
+                path: "/RequestUtil",
+                name: "home",
+                component: () => import("../modules/RequestUtil")
+            },
+            {
+                path: "/vue/v-model",
+                name: "vue-v-model",
+                component: () => import("../modules/Vue/VModel")
+            },
+            {
+                path: "/vue/sync",
+                name: "vue-sync",
+                component: () => import("../modules/Vue/Sync")
+            },
+            {
+                path: "/vue/slot",
+                name: "vue-slot",
+                component: () => import("../modules/Vue/Slot")
+            },
+            {
+                path: "/other/clipboard",
+                name: "vue-slot",
+                component: () => import("../modules/Other/Clipboard")
+            }
+        ]
     }
 ];
 
