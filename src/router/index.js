@@ -43,6 +43,16 @@ const routes = [
                 path: "/other/clipboard",
                 name: "vue-slot",
                 component: () => import("../modules/Other/Clipboard")
+            },
+            {
+                path: "/other/confirm",
+                name: "vue-slot",
+                component: () => import("../modules/Other/Confirm")
+            },
+            {
+                path: "/other/treeTableSummary",
+                name: "vue-slot",
+                component: () => import("../modules/Other/TreeTableSummary")
             }
         ]
     }

@@ -101,6 +101,16 @@ const getMenus = function(req, res) {
                         id: "clipboard",
                         icon: "el-icon-ofly-request iconfont",
                         name: "Clipboard"
+                    },
+                    {
+                        id: "confirm",
+                        icon: "el-icon-ofly-request iconfont",
+                        name: "Confirm"
+                    },
+                    {
+                        id: "treeTableSummary",
+                        icon: "el-icon-ofly-request iconfont",
+                        name: "TreeTableSummary"
                     }
                 ]
             },

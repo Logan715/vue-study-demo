@@ -22,6 +22,10 @@ export default {
         import(/* webpackChunkName: "dragAndDrop" */ "./Undefined/DragAndDrop"),
         flexTable: () =>
         import(/* webpackChunkName: "dragAndDrop" */ "./Undefined/FlexTable"),
-    clipboard: () =>
-        import(/* webpackChunkName: "Clipboard" */ "./Other/Clipboard")
+        clipboard: () =>
+        import(/* webpackChunkName: "Clipboard" */ "./Other/Clipboard"),
+        confirm: () =>
+        import(/* webpackChunkName: "Clipboard" */ "./Other/Confirm"),
+        treeTableSummary: () =>
+        import(/* webpackChunkName: "Clipboard" */ "./Other/TreeTableSummary"),
 };

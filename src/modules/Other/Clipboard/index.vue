@@ -17,7 +17,7 @@ export default {
   methods:{
     async clipboardCopy(){
       await copy(this.text);
-      this.$message.success('拷贝完成')
+      this.$message.success('复制成功')
     }
   }
 }
