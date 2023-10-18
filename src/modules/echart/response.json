@@ -1,0 +1,954 @@
+{
+  "resList": [
+    {
+      "yAxis": 0,
+      "xAxis": 0,
+      "name": "一、二月",
+      "value": 0
+    },
+    {
+      "yAxis": 35,
+      "xAxis": 1,
+      "name": "三月",
+      "value": 35
+    },
+    {
+      "yAxis": 6,
+      "xAxis": 2,
+      "name": "四月",
+      "value": 6
+    },
+    {
+      "yAxis": 51,
+      "xAxis": 3,
+      "name": "五月",
+      "value": 51
+    },
+    {
+      "yAxis": 18,
+      "xAxis": 4,
+      "name": "六月",
+      "value": 18
+    },
+    {
+      "yAxis": 19,
+      "xAxis": 5,
+      "name": "七月",
+      "value": 19
+    },
+    {
+      "yAxis": 0,
+      "xAxis": 6,
+      "name": "八月",
+      "value": 0
+    },
+    {
+      "yAxis": 0,
+      "xAxis": 7,
+      "name": "九月",
+      "value": 0
+    },
+    {
+      "yAxis": 0,
+      "xAxis": 8,
+      "name": "十月",
+      "value": 0
+    },
+    {
+      "yAxis": 0,
+      "xAxis": 9,
+      "name": "十一月",
+      "value": 0
+    },
+    {
+      "yAxis": 0,
+      "xAxis": 10,
+      "name": "十二月",
+      "value": 0
+    }
+  ],
+  "dataList": [
+    {
+      "data": [
+        {
+          "label": "一、二月",
+          "value": 0
+        },
+        {
+          "label": "三月",
+          "value": 1
+        },
+        {
+          "label": "四月",
+          "value": 0
+        },
+        {
+          "label": "五月",
+          "value": 0
+        },
+        {
+          "label": "六月",
+          "value": 0
+        },
+        {
+          "label": "七月",
+          "value": 0
+        },
+        {
+          "label": "八月",
+          "value": 0
+        },
+        {
+          "label": "九月",
+          "value": 0
+        },
+        {
+          "label": "十月",
+          "value": 0
+        },
+        {
+          "label": "十一月",
+          "value": 0
+        },
+        {
+          "label": "十二月",
+          "value": 0
+        }
+      ],
+      "name": "吴航街道"
+    },
+    {
+      "data": [
+        {
+          "label": "一、二月",
+          "value": 0
+        },
+        {
+          "label": "三月",
+          "value": 0
+        },
+        {
+          "label": "四月",
+          "value": 3
+        },
+        {
+          "label": "五月",
+          "value": 0
+        },
+        {
+          "label": "六月",
+          "value": 0
+        },
+        {
+          "label": "七月",
+          "value": 6
+        },
+        {
+          "label": "八月",
+          "value": 0
+        },
+        {
+          "label": "九月",
+          "value": 0
+        },
+        {
+          "label": "十月",
+          "value": 0
+        },
+        {
+          "label": "十一月",
+          "value": 0
+        },
+        {
+          "label": "十二月",
+          "value": 0
+        }
+      ],
+      "name": "航城街道"
+    },
+    {
+      "data": [
+        {
+          "label": "一、二月",
+          "value": 0
+        },
+        {
+          "label": "三月",
+          "value": 1
+        },
+        {
+          "label": "四月",
+          "value": 0
+        },
+        {
+          "label": "五月",
+          "value": 3
+        },
+        {
+          "label": "六月",
+          "value": 0
+        },
+        {
+          "label": "七月",
+          "value": 0
+        },
+        {
+          "label": "八月",
+          "value": 0
+        },
+        {
+          "label": "九月",
+          "value": 0
+        },
+        {
+          "label": "十月",
+          "value": 0
+        },
+        {
+          "label": "十一月",
+          "value": 0
+        },
+        {
+          "label": "十二月",
+          "value": 0
+        }
+      ],
+      "name": "营前街道"
+    },
+    {
+      "data": [
+        {
+          "label": "一、二月",
+          "value": 0
+        },
+        {
+          "label": "三月",
+          "value": 4
+        },
+        {
+          "label": "四月",
+          "value": 0
+        },
+        {
+          "label": "五月",
+          "value": 0
+        },
+        {
+          "label": "六月",
+          "value": 2
+        },
+        {
+          "label": "七月",
+          "value": 0
+        },
+        {
+          "label": "八月",
+          "value": 0
+        },
+        {
+          "label": "九月",
+          "value": 0
+        },
+        {
+          "label": "十月",
+          "value": 0
+        },
+        {
+          "label": "十一月",
+          "value": 0
+        },
+        {
+          "label": "十二月",
+          "value": 0
+        }
+      ],
+      "name": "首占镇"
+    },
+    {
+      "data": [
+        {
+          "label": "一、二月",
+          "value": 0
+        },
+        {
+          "label": "三月",
+          "value": 3
+        },
+        {
+          "label": "四月",
+          "value": 0
+        },
+        {
+          "label": "五月",
+          "value": 0
+        },
+        {
+          "label": "六月",
+          "value": 3
+        },
+        {
+          "label": "七月",
+          "value": 0
+        },
+        {
+          "label": "八月",
+          "value": 0
+        },
+        {
+          "label": "九月",
+          "value": 0
+        },
+        {
+          "label": "十月",
+          "value": 0
+        },
+        {
+          "label": "十一月",
+          "value": 0
+        },
+        {
+          "label": "十二月",
+          "value": 0
+        }
+      ],
+      "name": "鹤上镇"
+    },
+    {
+      "data": [
+        {
+          "label": "一、二月",
+          "value": 0
+        },
+        {
+          "label": "三月",
+          "value": 5
+        },
+        {
+          "label": "四月",
+          "value": 0
+        },
+        {
+          "label": "五月",
+          "value": 1
+        },
+        {
+          "label": "六月",
+          "value": 0
+        },
+        {
+          "label": "七月",
+          "value": 3
+        },
+        {
+          "label": "八月",
+          "value": 0
+        },
+        {
+          "label": "九月",
+          "value": 0
+        },
+        {
+          "label": "十月",
+          "value": 0
+        },
+        {
+          "label": "十一月",
+          "value": 0
+        },
+        {
+          "label": "十二月",
+          "value": 0
+        }
+      ],
+      "name": "古槐镇"
+    },
+    {
+      "data": [
+        {
+          "label": "一、二月",
+          "value": 0
+        },
+        {
+          "label": "三月",
+          "value": 2
+        },
+        {
+          "label": "四月",
+          "value": 0
+        },
+        {
+          "label": "五月",
+          "value": 10
+        },
+        {
+          "label": "六月",
+          "value": 0
+        },
+        {
+          "label": "七月",
+          "value": 0
+        },
+        {
+          "label": "八月",
+          "value": 0
+        },
+        {
+          "label": "九月",
+          "value": 0
+        },
+        {
+          "label": "十月",
+          "value": 0
+        },
+        {
+          "label": "十一月",
+          "value": 0
+        },
+        {
+          "label": "十二月",
+          "value": 0
+        }
+      ],
+      "name": "松下镇"
+    },
+    {
+      "data": [
+        {
+          "label": "一、二月",
+          "value": 0
+        },
+        {
+          "label": "三月",
+          "value": 6
+        },
+        {
+          "label": "四月",
+          "value": 0
+        },
+        {
+          "label": "五月",
+          "value": 0
+        },
+        {
+          "label": "六月",
+          "value": 3
+        },
+        {
+          "label": "七月",
+          "value": 2
+        },
+        {
+          "label": "八月",
+          "value": 0
+        },
+        {
+          "label": "九月",
+          "value": 0
+        },
+        {
+          "label": "十月",
+          "value": 0
+        },
+        {
+          "label": "十一月",
+          "value": 0
+        },
+        {
+          "label": "十二月",
+          "value": 0
+        }
+      ],
+      "name": "文武砂街道"
+    },
+    {
+      "data": [
+        {
+          "label": "一、二月",
+          "value": 0
+        },
+        {
+          "label": "三月",
+          "value": 3
+        },
+        {
+          "label": "四月",
+          "value": 3
+        },
+        {
+          "label": "五月",
+          "value": 18
+        },
+        {
+          "label": "六月",
+          "value": 3
+        },
+        {
+          "label": "七月",
+          "value": 0
+        },
+        {
+          "label": "八月",
+          "value": 0
+        },
+        {
+          "label": "九月",
+          "value": 0
+        },
+        {
+          "label": "十月",
+          "value": 0
+        },
+        {
+          "label": "十一月",
+          "value": 0
+        },
+        {
+          "label": "十二月",
+          "value": 0
+        }
+      ],
+      "name": "漳港街道"
+    },
+    {
+      "data": [
+        {
+          "label": "一、二月",
+          "value": 0
+        },
+        {
+          "label": "三月",
+          "value": 1
+        },
+        {
+          "label": "四月",
+          "value": 0
+        },
+        {
+          "label": "五月",
+          "value": 13
+        },
+        {
+          "label": "六月",
+          "value": 1
+        },
+        {
+          "label": "七月",
+          "value": 0
+        },
+        {
+          "label": "八月",
+          "value": 0
+        },
+        {
+          "label": "九月",
+          "value": 0
+        },
+        {
+          "label": "十月",
+          "value": 0
+        },
+        {
+          "label": "十一月",
+          "value": 0
+        },
+        {
+          "label": "十二月",
+          "value": 0
+        }
+      ],
+      "name": "湖南镇"
+    },
+    {
+      "data": [
+        {
+          "label": "一、二月",
+          "value": 0
+        },
+        {
+          "label": "三月",
+          "value": 0
+        },
+        {
+          "label": "四月",
+          "value": 0
+        },
+        {
+          "label": "五月",
+          "value": 0
+        },
+        {
+          "label": "六月",
+          "value": 0
+        },
+        {
+          "label": "七月",
+          "value": 4
+        },
+        {
+          "label": "八月",
+          "value": 0
+        },
+        {
+          "label": "九月",
+          "value": 0
+        },
+        {
+          "label": "十月",
+          "value": 0
+        },
+        {
+          "label": "十一月",
+          "value": 0
+        },
+        {
+          "label": "十二月",
+          "value": 0
+        }
+      ],
+      "name": "金峰镇"
+    },
+    {
+      "data": [
+        {
+          "label": "一、二月",
+          "value": 0
+        },
+        {
+          "label": "三月",
+          "value": 1
+        },
+        {
+          "label": "四月",
+          "value": 0
+        },
+        {
+          "label": "五月",
+          "value": 2
+        },
+        {
+          "label": "六月",
+          "value": 2
+        },
+        {
+          "label": "七月",
+          "value": 0
+        },
+        {
+          "label": "八月",
+          "value": 0
+        },
+        {
+          "label": "九月",
+          "value": 0
+        },
+        {
+          "label": "十月",
+          "value": 0
+        },
+        {
+          "label": "十一月",
+          "value": 0
+        },
+        {
+          "label": "十二月",
+          "value": 0
+        }
+      ],
+      "name": "文岭镇"
+    },
+    {
+      "data": [
+        {
+          "label": "一、二月",
+          "value": 0
+        },
+        {
+          "label": "三月",
+          "value": 0
+        },
+        {
+          "label": "四月",
+          "value": 0
+        },
+        {
+          "label": "五月",
+          "value": 2
+        },
+        {
+          "label": "六月",
+          "value": 1
+        },
+        {
+          "label": "七月",
+          "value": 0
+        },
+        {
+          "label": "八月",
+          "value": 0
+        },
+        {
+          "label": "九月",
+          "value": 0
+        },
+        {
+          "label": "十月",
+          "value": 0
+        },
+        {
+          "label": "十一月",
+          "value": 0
+        },
+        {
+          "label": "十二月",
+          "value": 0
+        }
+      ],
+      "name": "梅花镇"
+    },
+    {
+      "data": [
+        {
+          "label": "一、二月",
+          "value": 0
+        },
+        {
+          "label": "三月",
+          "value": 3
+        },
+        {
+          "label": "四月",
+          "value": 0
+        },
+        {
+          "label": "五月",
+          "value": 0
+        },
+        {
+          "label": "六月",
+          "value": 2
+        },
+        {
+          "label": "七月",
+          "value": 1
+        },
+        {
+          "label": "八月",
+          "value": 0
+        },
+        {
+          "label": "九月",
+          "value": 0
+        },
+        {
+          "label": "十月",
+          "value": 0
+        },
+        {
+          "label": "十一月",
+          "value": 0
+        },
+        {
+          "label": "十二月",
+          "value": 0
+        }
+      ],
+      "name": "潭头镇"
+    },
+    {
+      "data": [
+        {
+          "label": "一、二月",
+          "value": 0
+        },
+        {
+          "label": "三月",
+          "value": 3
+        },
+        {
+          "label": "四月",
+          "value": 0
+        },
+        {
+          "label": "五月",
+          "value": 1
+        },
+        {
+          "label": "六月",
+          "value": 0
+        },
+        {
+          "label": "七月",
+          "value": 0
+        },
+        {
+          "label": "八月",
+          "value": 0
+        },
+        {
+          "label": "九月",
+          "value": 0
+        },
+        {
+          "label": "十月",
+          "value": 0
+        },
+        {
+          "label": "十一月",
+          "value": 0
+        },
+        {
+          "label": "十二月",
+          "value": 0
+        }
+      ],
+      "name": "玉田镇"
+    },
+    {
+      "data": [
+        {
+          "label": "一、二月",
+          "value": 0
+        },
+        {
+          "label": "三月",
+          "value": 0
+        },
+        {
+          "label": "四月",
+          "value": 0
+        },
+        {
+          "label": "五月",
+          "value": 1
+        },
+        {
+          "label": "六月",
+          "value": 0
+        },
+        {
+          "label": "七月",
+          "value": 0
+        },
+        {
+          "label": "八月",
+          "value": 0
+        },
+        {
+          "label": "九月",
+          "value": 0
+        },
+        {
+          "label": "十月",
+          "value": 0
+        },
+        {
+          "label": "十一月",
+          "value": 0
+        },
+        {
+          "label": "十二月",
+          "value": 0
+        }
+      ],
+      "name": "罗联乡"
+    },
+    {
+      "data": [
+        {
+          "label": "一、二月",
+          "value": 0
+        },
+        {
+          "label": "三月",
+          "value": 0
+        },
+        {
+          "label": "四月",
+          "value": 0
+        },
+        {
+          "label": "五月",
+          "value": 0
+        },
+        {
+          "label": "六月",
+          "value": 1
+        },
+        {
+          "label": "七月",
+          "value": 3
+        },
+        {
+          "label": "八月",
+          "value": 0
+        },
+        {
+          "label": "九月",
+          "value": 0
+        },
+        {
+          "label": "十月",
+          "value": 0
+        },
+        {
+          "label": "十一月",
+          "value": 0
+        },
+        {
+          "label": "十二月",
+          "value": 0
+        }
+      ],
+      "name": "江田镇"
+    },
+    {
+      "data": [
+        {
+          "label": "一、二月",
+          "value": 0
+        },
+        {
+          "label": "三月",
+          "value": 2
+        },
+        {
+          "label": "四月",
+          "value": 0
+        },
+        {
+          "label": "五月",
+          "value": 0
+        },
+        {
+          "label": "六月",
+          "value": 0
+        },
+        {
+          "label": "七月",
+          "value": 0
+        },
+        {
+          "label": "八月",
+          "value": 0
+        },
+        {
+          "label": "九月",
+          "value": 0
+        },
+        {
+          "label": "十月",
+          "value": 0
+        },
+        {
+          "label": "十一月",
+          "value": 0
+        },
+        {
+          "label": "十二月",
+          "value": 0
+        }
+      ],
+      "name": "猴屿乡"
+    }
+  ]
+}

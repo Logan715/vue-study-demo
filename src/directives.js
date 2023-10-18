@@ -24,7 +24,6 @@ Vue.directive("nb-loading", {
         });
 
         setTimeout(()=>{
-          debugger
           loading.close();
           setTimeout(()=>{
             loading2.close();
@@ -53,6 +52,5 @@ Vue.directive("nb-loading", {
      */
     unbind: function(el, binding, vnode, oldVnode) {
       const a = loading;
-      debugger
     }
 });

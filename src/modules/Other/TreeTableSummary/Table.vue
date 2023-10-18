@@ -1,5 +1,6 @@
 <template>
   <div>
+    <el-button @click="handleClick">测试debounce1</el-button>
     <el-table
       class="nb-table"
       size="mini"
@@ -91,6 +92,9 @@ export default Vue.extend({
     },
   },
   methods: {
+    handleClick() {
+      console.count("handleClick");
+    },
     sizeChange(size) {
       this.$emit(
         "paginationChange",

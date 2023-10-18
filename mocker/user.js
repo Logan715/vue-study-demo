@@ -22,6 +22,11 @@ const getMenus = function(req, res) {
         code: 1,
         records: [
             {
+                id: "echart",
+                icon: "el-icon-ofly-v-model iconfont",
+                name: "自定义v-model"
+            },
+            {
                 id: "vue",
                 icon: "el-icon-ofly-vue iconfont",
                 name: "Vue",
@@ -111,6 +116,16 @@ const getMenus = function(req, res) {
                         id: "treeTableSummary",
                         icon: "el-icon-ofly-request iconfont",
                         name: "TreeTableSummary"
+                    },
+                    {
+                        id: "testAnother",
+                        icon: "el-icon-ofly-request iconfont",
+                        name: "随便删除"
+                    },
+                    {
+                        id: "threejs",
+                        icon: "el-icon-ofly-request iconfont",
+                        name: "threejs"
                     }
                 ]
             },
